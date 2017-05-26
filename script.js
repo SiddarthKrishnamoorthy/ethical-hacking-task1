@@ -135,9 +135,7 @@ function check_flag(str){
         comp = SHA256(flag)
         if(str == 'flag1'){
            if(comp == '019d2e5e7512c118dacbad59aa834b497899d0fffcd65897a3527d6a0c4bca73'){
-		document.getElementById('1').show();
-		wait(3000);
-		document.getElementById('1').hide();
+               alert('Correct')
            }
            else{
                alert('Incorrect')
