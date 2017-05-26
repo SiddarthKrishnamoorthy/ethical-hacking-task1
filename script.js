@@ -133,11 +133,11 @@ function check_flag(str){
     else{
         flag = document.getElementById(str).value
         comp = SHA256(flag)
-	var node = document.getElementById("kuchNam");
         if(str == 'flag1'){
            if(comp == '019d2e5e7512c118dacbad59aa834b497899d0fffcd65897a3527d6a0c4bca73'){
-	       alert('Correct')
-	       node.innerHTML="<div class='alert'><a class='close' data-dismiss='alert'>×</a><span class='label label-default'>'+message+'</span></div>"
+		document.getElementById('1').show();
+		wait(3000);
+		document.getElementById('1').hide();
            }
            else{
                alert('Incorrect')
