@@ -127,18 +127,45 @@ function SHA256(s){
 }
 
 function check_flag(str){
-    if(str != 'flag1' || str != 'flag2' || str != 'flag3' || str != 'flag4'){
+    if(str != 'flag1' && str != 'flag2' && str != 'flag3' && str != 'flag4'){
         alert("Id not correct")
     }
     else{
         flag = document.getElementById(str).value
+        comp = SHA256(flag)
         if(str == 'flag1'){
-            if(SHA256(flag) == '019D2E5E7512C118DACBAD59AA834B497899D0FFFCD65897A3527D6A0C4BCA73'){
-                alert('Success')
-            }
-            else{
-                alert('Failure')
-            }
+           if(comp == '019d2e5e7512c118dacbad59aa834b497899d0fffcd65897a3527d6a0c4bca73'){
+               alert('Success')
+           }
+           else{
+               alert('Failure')
+           }
+        }
+        if(str == 'flag2'){
+           if(comp == 'b63fa4d8e03f8a57590e5807259a060b8d42d85862c973d1543ca51e6dbd5fe8'){
+               alert('Success')
+           }
+           else{
+               alert('Failure')
+           }
+        }
+
+        if(str == 'flag3'){
+           if(comp == '240d2c9f8625552dcdf3b639d437d5230ba3badeada3d98d06f0e10f5ddf4b91'){
+               alert('Success')
+           }
+           else{
+               alert('Failure')
+           }
+        }
+
+        if(str == 'flag4'){
+           if(comp == '1cdc60ae9f3b2099ae49b547977bcc5417a0ad089451f0cf71c09afcd3d94f1c'){
+               alert('Success')
+           }
+           else{
+               alert('Failure')
+           }
         }
     }
 }
