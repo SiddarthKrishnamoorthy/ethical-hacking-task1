@@ -133,38 +133,40 @@ function check_flag(str){
     else{
         flag = document.getElementById(str).value
         comp = SHA256(flag)
+	var node = document.getElementById("kuchNam");
         if(str == 'flag1'){
            if(comp == '019d2e5e7512c118dacbad59aa834b497899d0fffcd65897a3527d6a0c4bca73'){
-               alert('Success')
+	       alert('Correct')
+	       node.innerHTML="<div class='alert'><a class='close' data-dismiss='alert'>×</a><span class='label label-default'>'+message+'</span></div>"
            }
            else{
-               alert('Failure')
+               alert('Incorrect')
            }
         }
         if(str == 'flag2'){
            if(comp == 'b63fa4d8e03f8a57590e5807259a060b8d42d85862c973d1543ca51e6dbd5fe8'){
-               alert('Success')
+               alert('Correct')
            }
            else{
-               alert('Failure')
+               alert('Incorrect')
            }
         }
 
         if(str == 'flag3'){
            if(comp == '240d2c9f8625552dcdf3b639d437d5230ba3badeada3d98d06f0e10f5ddf4b91'){
-               alert('Success')
+               alert('Correct')
            }
            else{
-               alert('Failure')
+               alert('Incorrect')
            }
         }
 
         if(str == 'flag4'){
            if(comp == '1cdc60ae9f3b2099ae49b547977bcc5417a0ad089451f0cf71c09afcd3d94f1c'){
-               alert('Success')
+               alert('Correct')
            }
            else{
-               alert('Failure')
+               alert('Incorrect')
            }
         }
     }
