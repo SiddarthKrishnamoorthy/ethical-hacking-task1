@@ -134,7 +134,7 @@ function check_flag(str){
         flag = document.getElementById(str).value
         comp = SHA256(flag)
         if(str == 'flag1'){
-           if(comp == '019d2e5e7512c118dacbad59aa834b497899d0fffcd65897a3527d6a0c4bca73'){
+           if(comp == '97d19a4969a703ec5682f02581c947fd14f4e01c876f076581ca7427dd80fddf'){
                alert('Correct')
            }
            else{
@@ -142,7 +142,7 @@ function check_flag(str){
            }
         }
         if(str == 'flag2'){
-           if(comp == 'b63fa4d8e03f8a57590e5807259a060b8d42d85862c973d1543ca51e6dbd5fe8'){
+           if(comp == '1c401395c6c2e1f2bd3043fc8c18989e1dc0be889b9d535d049de86ad00c6efe'){
                alert('Correct')
            }
            else{
@@ -151,7 +151,7 @@ function check_flag(str){
         }
 
         if(str == 'flag3'){
-           if(comp == '240d2c9f8625552dcdf3b639d437d5230ba3badeada3d98d06f0e10f5ddf4b91'){
+           if(comp == '8175e7ab8de9058286575630fe5c7dd786a1c237a0e230d0600b3f7a6f7771c5'){
                alert('Correct')
            }
            else{
