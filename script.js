@@ -160,7 +160,7 @@ function check_flag(str){
         }
 
         if(str == 'flag4'){
-           if(comp == '1cdc60ae9f3b2099ae49b547977bcc5417a0ad089451f0cf71c09afcd3d94f1c'){
+           if(comp == '8b942cfd258390836135f2affafd78b5f1727ef258237c67c0668db611ff1cc0'){
                alert('Correct')
            }
            else{
